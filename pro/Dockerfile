@@ -18,15 +18,15 @@ LABEL vendor=Sonatype \
   com.sonatype.license="Apache License, Version 2.0" \
   com.sonatype.name="Nexus Repository Manager Pro base image"
 
-ARG NEXUS_VERSION=2.14.5-02
+ARG NEXUS_VERSION=2.14.8-01
 ARG NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/professional-bundle/nexus-professional-${NEXUS_VERSION}-bundle.tar.gz
 
 ENV SONATYPE_WORK=/sonatype-work \
     JAVA_HOME=/opt/java \
     JAVA_VERSION_MAJOR=8 \
-    JAVA_VERSION_MINOR=144 \
-    JAVA_VERSION_BUILD=01 \
-    JAVA_DOWNLOAD_HASH=090f390dda5b47b9b721c7dfaa008135
+    JAVA_VERSION_MINOR=161 \
+    JAVA_VERSION_BUILD=12 \
+    JAVA_DOWNLOAD_HASH=2f38c3b165be4555a1fa6e98c45e0808
 
 ENV JAVA_URL=http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/${JAVA_DOWNLOAD_HASH}/server-jre-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz
 
