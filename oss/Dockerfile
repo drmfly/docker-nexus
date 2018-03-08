@@ -21,7 +21,7 @@ LABEL vendor=Sonatype \
 ARG NEXUS_VERSION=2.14.8-01
 ARG NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/oss/nexus-${NEXUS_VERSION}-bundle.tar.gz
 
-ENV SONATYPE_WORK=/sonatype-work \
+ENV SONATYPE_WORK=/sonatype_work \
     JAVA_HOME=/opt/java \
     JAVA_VERSION_MAJOR=8 \
     JAVA_VERSION_MINOR=161 \
